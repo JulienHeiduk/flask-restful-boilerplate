@@ -4,7 +4,7 @@ class HelloController(Resource):
 
     def get(self):
         return {"response" : "hello get"} 
-    
+
     #def post(self):
     #    return {"response" : "hello post"}
 
@@ -13,3 +13,7 @@ class HelloController(Resource):
 
     #def delete(self):
     #    return {"response" : "hello delete"}
+class InfoController(Resource):
+
+    def get(self):
+        return "Test for InfoController"
