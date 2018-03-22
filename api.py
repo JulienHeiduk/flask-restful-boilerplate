@@ -13,8 +13,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db = SQLAlchemy(app)
 
+# infos
 api.add_resource(helloController.HelloController, '/api/hello')
 api.add_resource(helloController.InfoController, '/')
+
+# Ml
+api.add_resource(machinelearning.classification,'/ml')
 
 if __name__ == '__main__':
     app.run(debug=True)
