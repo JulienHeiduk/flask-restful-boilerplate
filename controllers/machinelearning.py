@@ -6,4 +6,4 @@ class classification(Resource):
 
     def get(self):
         dirpath = os.getcwd()
-        return print("current directory is : " + dirpath) 
+        return dirpath 
